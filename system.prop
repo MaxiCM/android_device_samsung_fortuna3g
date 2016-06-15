@@ -61,6 +61,9 @@ wifi.interface=wlan0
 ro.bluetooth.hfp.ver=1.6
 ro.qualcomm.bt.hci_transport=smd
 
+# OTA
+ro.ota.manifest=http://maxicm.com/fortuna3g/ota.xml
+
 # Misc.
 ro.chipname=MSM8916
 ro.warmboot.capability=1
@@ -81,3 +84,69 @@ dalvik.vm.dex2oat-flags=--no-watch-dog
 # Samsung OEM
 ro.multisim.set_audio_params=true
 ro.telephony.samsung.realcall=true
+
+# MaxiTweaks 5.1
+# Qualcomm Tweaks
+debug.qctwa.statusbar=1
+debug.qc.hardware=true
+com.qc.hardware=true
+debug.qctwa.preservebuf=1
+# Disables data sent and logging
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+
+# Performance
+debug.kill_allocating_task=0
+force_hw_ui=true
+ro.debuggable=1
+# Saves some battery without reducing performances
+power.saving.mode=1
+# Battery save
+ro.ril.disable.power.collapse=0
+ro.ril.power_collapse=1
+power_supply.wakeup=enable
+profiler.force_disable_ulog=true
+profiler.force_disable_err_rpt=true
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+# Increase some Performance
+ro.product.gpu.driver=1
+ENFORCE_PROCESS_LIMIT=false
+ro.wmt.blcr.enable=0
+# Bass audio props for Lolipop
+tunnel.decode=false
+persist.sys.media.use-awesome=1
+sys.keep_app_1=com.bel.android.dspmanager
+ro.audio.samplerate=48000
+ro.audio.pcm.samplerate=48000
+af.resample=52000
+# Game tweaks
+persist.sys.NV_FPSLIMIT=60
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_PROFVER=15
+persist.sys.NV_STEREOCTRL=0
+persist.sys.NV_STEREOSEPCHG=0
+persist.sys.NV_STEREOSEP=20
+
+# Increase jpg quality to 100%
+ro.media.enc.jpeg.quality=100
+# Force GPU Rendering on 2d Operations
+debug.sf.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
+debug.composition.type=c2d
+
+#NEW
+# Better internet browsing & download speed
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.hspa=6144,87380,524288,6144,163 84,262144
+net.tcp.buffersize.lte=524288,1048576,2097152,5242 88,1048576,2097152
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,8 7380,1048576
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144, 87380,1048576
+
+#End of MaxiTweaks 5.1
+
